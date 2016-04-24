@@ -1,0 +1,77 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden; }
+
+body {
+  padding: 70px 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.centered {
+    margin: 0 auto;
+    width: 800px;
+    text-align: center;
+}
+
+.spacecat {
+    margin: 0 auto;
+    width: 170px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.cap {
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    z-index: 2;
+}
+
+.belt {
+    position: absolute;
+    top: 145px;
+    left: 55px;
+    z-index: 2;
+}
+.controls{
+    position: absolute;
+    top: 186px;
+    left: 60px;
+    z-index: 2;
+}
+
+.cntrl {
+    left: 31px;
+}
+
+.back {
+    position: absolute;
+    top: 130px;
+    left: 0px;
+    z-index: -1;
+}
+
+.water {
+    left: 35px;
+}
+
+.explainer {
+    position: absolute;
+    left: 20%;
+    /*top: 100%;*/
+    padding: 20px 10px 10px 10px;
+    width: 300px;
+}
+
+.label:hover {
+    cursor: pointer;
+}

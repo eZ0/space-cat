@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="136px" height="33px" viewBox="0 0 136 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 15</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Catonaut" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-15">
+            <path d="M15.9485829,7.08163851 C15.4959171,3.10234013 12.1098829,0 8,0 C3.59071231,0 0,3.57782724 0,7.9913008 L0,19.0086992 C0,23.4146085 3.581722,27 8,27 C12.4092877,27 16,23.4221728 16,19.0086992 L16,18.3033584 L17.1759982,16.5030748 L25.7050791,9.64131618 L35.6555031,15.0584853 L36.1282197,8.37945652 L27.2775714,2.48722665 C27.2775714,2.48722665 21.2275421,4.29214466 15.9485829,7.08163851 Z" id="Combined-Shape" fill="#2181AF"></path>
+            <ellipse id="Oval-34" fill-opacity="0.9" fill="#E88888" cx="8.5" cy="5.8125" rx="5.5" ry="4.8125"></ellipse>
+            <g id="Group-14" transform="translate(99.000000, 6.000000)" fill="#2181AF">
+                <g id="Group-13">
+                    <path d="M4.94943543,8.71570452 C8.59690034,3.24650194 26.908663,4.97375485 26.908663,4.97375485 L30.1260215,12.6286267 L27.1857181,18.6442316 L22.7707044,11.0178452 L12.2922183,14.1849071 L7.73953341,17.3545586 C7.73953341,17.3545586 4.78593755,23.1759444 3.04063091,18.6804258 C1.29532426,14.1849073 1.30197052,14.1849071 4.94943543,8.71570452 Z" id="Path-34" transform="translate(16.016797, 12.549670) scale(-1, 1) rotate(-22.000000) translate(-16.016797, -12.549670) "></path>
+                </g>
+                <rect id="Rectangle-1" x="21" y="0" width="16" height="27" rx="8"></rect>
+            </g>
+            <ellipse id="Oval-34" fill="#E45454" cx="8" cy="5.5" rx="4" ry="3.5"></ellipse>
+            <g id="Group-10" transform="translate(122.000000, 7.000000)">
+                <ellipse id="Oval-34" fill-opacity="0.9" fill="#E88888" cx="5.5" cy="4.8125" rx="5.5" ry="4.8125"></ellipse>
+                <ellipse id="Oval-34" fill="#E45454" cx="5" cy="4.5" rx="4" ry="3.5"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

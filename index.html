@@ -1,0 +1,113 @@
+<!doctype html>
+
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>Build your own JetPack!</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body ng-app='app' ng-cloak >
+    <div ng-controller="MainController as vm">
+      <div class='centered'>
+            <h1>Jet Set Mars</h1>
+            <h2>#ESA #Techsploration</h2>
+            <div>
+                <span class="label label-success" ng-click='showStep(1)'>Step 1</span>
+                <span class="label label-success" ng-click='showStep(2)'>Step 2</span>
+                <span class="label label-success" ng-click='showStep(3)'>Step 3</span>
+
+            </div>
+            <div ng-if='isStepOne'>
+                <h3>Hi there, space cat!</h3>
+                <p>Ready to purrrrrsuit with a rocket suit? <br/>Soaring amongst the sky? Or are you merely dreaming to fly?</p>
+                <p>From Icarus and Superman, over flying belts to wingsuits… <br/>Not only humans have been dreaming to conquer the skies.</p>
+            </div>
+            <div ng-if='isStepTwo'>
+              <h3>Aim for the stars, first flight to Mars!</h3>
+              <p>Are you feeling lucky? Get into the skin of Pussy Commander! <br/>
+                The expedition starts right meow. Ready to spend a furry life or nine in the Milky Way galaxy?</p>
+              <p>First stop: Mars. De best place off earth to test this out-of-this-world vehicle.<br/>
+                Lower gravity, atmospheric density and breathtaking vistas. Still, not for pussies.</p>
+            </div>
+          <div ng-if='isStepThree'>
+              <h3>Get the Jet Set for dummies</h3>
+              <p>A jet set should be able to tackle two things: lifting you up and getting you stable!</p>
+              <h3>Grab your parts!</h3>
+
+          <nav class="navbar navbar-default">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li ng-click='showEngines()' class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Engines<span class="caret"></span></a>
+                         <ul class="dropdown" ng-if='isEngines'>
+                            <li ng-click='dispayInfoEngine("bat")'><a >Bat Engine</a></li>
+                            <li ng-click='dispayInfoEngine("water")'><a >Water jet</a></li>
+                            <li ng-click='dispayInfoEngine("rocket")'><a >Rocket</a></li>
+                        </ul>
+                    </li>
+                    <li ng-click='showControls()' class="dropdown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pilote control interfaces<span class="caret"></span></a>
+                        <ul class="options" ng-if='isControls'>
+                            <li ng-click='displayInfoControls("60s")'><a >60's Controls</a></li>
+                            <li ng-click='displayInfoControls("80s")'><a >80's Controls</a></li>
+                        </ul>
+                    </li>
+                    <li ng-click='showBelts()' class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Floating harnesses & belts<span class="caret"></span></a>
+                        <ul class="options" ng-if='isBelts'>
+                            <li ng-click='dispayInfoBelt("bat")'><a >Bat Belt</a></li>
+                            <li ng-click='dispayInfoBelt("arrow")'><a >Arrow Belt</a></li>
+                            <li ng-click='dispayInfoBelt("planet")'><a >Planet Belt</a></li>
+                        </ul>
+                    </li>
+                    <li ng-click='showHelmets()' class="dropdown"><a class="dropdown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Speedhelmets<span class="caret"></span></a>
+                    <ul class="options" ng-if='isHelmets'>
+                        <li ng-click='displayInfoHelmet("bat")'><a >Bat Helmet</a></li>
+                        <li ng-click='displayInfoHelmet("aquarium")'><a >Aquarium Helmet</a></li>
+                    </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <section class="explainer bg-info">
+            <p ng-if="isRocket">Turbo-jet engines are basically fueled with kerosene.<br>Purrfect! Great height and duration of flight!</p>
+            <p ng-if="isWaterJet"> Hydro jet pack! Are you kitting me? Water in space? Quite the catastrophe!</p>
+            <p ng-if="isBatEngine">  Whoops, curiosity killed the batcat! <br>Cause hell no, a cape won’t save you in space...</p>
+            <p ng-if="isBatBelt || isPlanetBelt || isArrowBelt">Keep your shit together!</p>
+            <p ng-if="is80sControls">Multiboard with too many options for one cat to handle</p>
+            <p ng-if="is60sControls">Cyberclaw. Use it well. YOLN! You Only Live Nince!</p>
+            <p ng-if="isAquariumHelmet">Bubble shield!</p>
+        </section>
+      </div>
+
+      <section class='spacecat'>
+            <img class='back' ng-if="isBatEngine" src="images/batcape.svg">
+            <img class='back water' ng-if="isWaterJet" src="images/_jetengine1.svg">
+            <img class='back water' ng-if="isRocket" src="images/jetengine.svg">
+            <img src="images/kitty.svg">
+            <img class='cap' ng-if="isBatHelmet" src="images/batcap.svg">
+             <img class='cap' ng-if="isAquariumHelmet" src="images/headprotection.svg">
+            <img class='belt' ng-if="isBatBelt" src="images/batbelt.svg">
+            <img class='belt' ng-if="isArrowBelt" src="images/belt_arrow.svg">
+            <img class='belt' ng-if="isPlanetBelt" src="images/belt_planet.png">
+            <img class='controls' ng-if="is80sControls" src="images/70scontrols.svg">
+            <img class='controls cntrl' ng-if="is60sControls" src="images/Controls.svg">
+      </section>
+      </div>
+    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script type="text/javascript" src='controllers/mainController.js'></script>
+</body>
+
+</html>
